@@ -13,11 +13,13 @@ export default function Hero() {
               I&apos;m{" "}
               <span className="text-primary block md:inline">Abdul Ahad</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white">Flutter Developer</p>
+            <p className="text-xl md:text-2xl text-white">
+              Software Engineer / Researcher
+            </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
                 href="#contact"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-sm font-medium text-black hover:bg-primary/90 transition-colors"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-sm font-mediumbold text-black hover:bg-primary/90 transition-colors"
               >
                 HIRE ME
               </Link>
@@ -33,8 +35,8 @@ export default function Hero() {
           {/* Right Column - Image */}
           <div className="relative h-[400px] md:h-[400px]">
             <Image
-              src="/images/ahad.jpeg"
-              alt="Clark Thompson"
+              src="/images/ahad.svg"
+              alt="Abdulahad"
               fill
               className="object-contain object-center"
               priority

@@ -10,7 +10,7 @@ const navItems = [
   { name: "Services", href: "#services" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
-  { name: "My Blog", href: "#blog" },
+  { name: "Publications", href: "#publications" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -49,14 +49,14 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-50 bg-black backdrop-blur-sm py-2">
+    <header className="sticky top-0 left-0 right-0 z-50 bg-black backdrop-blur-sm py-2 px-10">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link
             href="#home"
             className="ml-4 text-2xl font-semibold tracking-tighter text-primaryText"
           >
-            {"</> Abdulahad  "}
+            {"< Abdulahad />  "}
           </Link>
 
           {/* Desktop Navigation */}

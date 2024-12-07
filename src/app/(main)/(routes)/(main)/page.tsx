@@ -1,5 +1,11 @@
-import Hero from "./_components/hero";
-import About from "./_components/about";
+import Hero from "./_components/Hero/hero";
+import About from "./_components/About/about";
+import Resume from "./_components/Resume/resume";
+import Services from "./_components/Services/services";
+import Skills from "./_components/Skills/skills";
+import Projects from "./_components/Projects/projects";
+import Publications from "./_components/Publications/publications";
+import Contact from "./_components/Contact/contact";
 
 export default function Home() {
   return (
@@ -13,32 +19,23 @@ export default function Home() {
           <About />
         </section>
         <section id="resume" className="min-h-screen ">
-          <h2 className="text-3xl font-bold text-center py-20">
-            Resume Section
-          </h2>
+          <Resume />
         </section>
         <section id="services" className="min-h-screen ">
-          <h2 className="text-3xl font-bold text-center py-20">
-            Services Section
-          </h2>
+          <Services />
         </section>
         <section id="skills" className="min-h-screen ">
-          <h2 className="text-3xl font-bold text-center py-20">
-            Skills Section
-          </h2>
+          <Skills />
         </section>
         <section id="projects" className="min-h-screen ">
-          <h2 className="text-3xl font-bold text-center py-20">
-            Projects Section
-          </h2>
+          <Projects />
         </section>
-        <section id="blog" className="min-h-screen ">
-          <h2 className="text-3xl font-bold text-center py-20">Blog Section</h2>
+        <section id="publications" className="min-h-screen ">
+          <Publications />
         </section>
+
         <section id="contact" className="min-h-screen ">
-          <h2 className="text-3xl font-bold text-center py-20">
-            Contact Section
-          </h2>
+          <Contact />
         </section>
       </main>
     </>
