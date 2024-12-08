@@ -43,7 +43,7 @@ export default function Footer() {
               Abdulahad
             </Link>
             <p className="mt-2 text-sm text-gray-400">
-              Flutter Developer & Software Engineer
+              Software Engineer & Researcher
             </p>
           </div>
           <nav className="mb-6 md:mb-0">

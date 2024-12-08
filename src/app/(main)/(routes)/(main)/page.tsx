@@ -10,7 +10,6 @@ import Contact from "./_components/Contact/contact";
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
       <main className="min-h-screen pt-16">
         <section id="home" className="min-h-screen ">
           <Hero />

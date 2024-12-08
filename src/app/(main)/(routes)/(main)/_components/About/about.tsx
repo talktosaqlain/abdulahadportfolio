@@ -22,9 +22,6 @@ export default function About() {
             <div className="space-y-4">
               <h2 className="text-5xl md:text-6xl font-bold text-white relative">
                 About Me
-                <span className="absolute -top-8 left-0 text-secondaryText/50 text-7xl md:text-8xl opacity-20 -z-10">
-                  About
-                </span>
               </h2>
               <p className="text-secondaryText/80 text-lg">
                 I am a Flutter developer with five years of experience building
@@ -39,13 +36,17 @@ export default function About() {
               <InfoItem label="Address:" value="Lahore, Pakistan" />
               <InfoItem label="Email:" value="abadulahadofficialy@gmail.com" />
               <InfoItem label="Phone:" value="+92 344 4891612" />
+              <InfoItem
+                label="Qualification:"
+                value="Bachelor in Computer Science (BSCS)"
+              />
             </div>
 
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <span className="text-primary text-4xl font-bold">12</span>
                 <span className="text-white text-xl">Project complete</span>
-              </div>
+              </div> */}
 
               <a
                 href="/images/ahad.pdf"
