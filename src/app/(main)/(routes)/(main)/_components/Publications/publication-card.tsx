@@ -19,7 +19,7 @@ export function PublicationCard({
     <div className="bg-[#111111] p-6 rounded-lg group hover:bg-[#1a1a1a] transition-colors">
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
-          <FileText className="w-6 h-6 text-primary" />
+          <FileText className="w-20 h-10 text-primary" />
           <h3 className="text-white text-xl font-semibold line-clamp-2">
             {title}
           </h3>

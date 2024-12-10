@@ -20,7 +20,7 @@ export default function Publications() {
         </div>
 
         {/* Publications Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
           {publicationsData.map((publication) => (
             <PublicationCard
               key={publication.id}

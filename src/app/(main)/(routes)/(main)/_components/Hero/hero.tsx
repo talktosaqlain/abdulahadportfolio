@@ -1,29 +1,59 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Linkedin, Youtube, Briefcase } from "lucide-react";
+import { FaGithub, FaLinkedin,  FaInstagram, FaFacebook, FaYoutube, FaWhatsapp,   FaF, FaGoogleScholar} from 'react-icons/fa6';
 
 const socialLinks = [
   {
     name: "GitHub",
-    icon: Github,
+    icon: FaGithub,
     href: "https://github.com/abdulahadofficially",
+    colorClass: "text-gray-300", // GitHub icon color (gray)
   },
   {
     name: "LinkedIn",
-    icon: Linkedin,
-    href: "https://www.linkedin.com/in/abdulahad16/",
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/in/abdulahadofficially",
+    colorClass: "text-gray-300", // LinkedIn original blue
   },
   {
     name: "Fiverr",
-    icon: Briefcase, // Using the Briefcase icon as a placeholder for Fiverr
+    icon: FaF, 
     href: "https://fiverr.com/coderedge",
+    colorClass: "text-gray-300", 
   },
   {
     name: "YouTube",
-    icon: Youtube,
+    icon: FaYoutube,
     href: "https://www.youtube.com/technicalencoder",
+    colorClass: "text-gray-300", // YouTube original red
+  },  {
+    name: "Google Scholor",
+    icon: FaGoogleScholar,
+    href: "https://scholar.google.com/citations?user=BRR1LwYAAAAJ&hl=en",
+    colorClass: "text-gray-300", // YouTube original red
+  },
+
+  {
+    name: "Instagram",
+    icon: FaInstagram,
+    href: "https://www.instagram.com/abdulahadofficially",
+    colorClass: "text-gradient-to-r from-pink-500 via-purple-500 to-yellow-500", // Instagram gradient
+  },
+  {
+    name: "Facebook",
+    icon: FaFacebook,
+    href: "https://web.facebook.com/abdulahadofficially",
+    colorClass: "text-gray-300", // Facebook original blue
+  },
+  {
+    name: "WhatsApp", // Adding WhatsApp to the socialLinks array
+    icon: FaWhatsapp,
+    href: "https://wa.me/+923114891612", // Replace with your WhatsApp number
+    colorClass: "text-gray-300", // WhatsApp brand color (green)
   },
 ];
+
+
 export default function Hero() {
   return (
     <section className="min-h-screen bg-black relative overflow-hidden">
@@ -31,27 +61,26 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left Column - Text Content */}
           <div className="space-y-6">
-            <span className="text-primary text-lg font-medium">HELLO!</span>
+            <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold text-white">
+              <span className="text-primary text-[40px]">Hello 👋</span>
+            </h1>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
               I&apos;m{" "}
               <span className="text-primary block md:inline">Abdul Ahad</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white">
-              Software Engineer & Researcher
-            </p>
+            <p className="text-xl md:text-1.5xl text-white">Mobile App Developer and Researcher</p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link
                 href="https://fiverr.com/coderedge"
-                className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-sm font-mediumbold text-black hover:bg-primary/90 transition-colors"
+                className="inline-flex h-12  items-center justify-center rounded-full bg-primary px-8 text-sm font-mediumbold text-black hover:bg-primary/90 transition-colors"
               >
                 HIRE ME
               </Link>
               <Link
-                href="#projects"
+                href="/images/ahad.pdf"
                 className="inline-flex h-12 items-center justify-center rounded-full border border-white px-8 text-sm font-medium text-white hover:bg-white/10 transition-colors"
               >
-                MY WORKS
-              </Link>
+Download CV              </Link>
             </div>
             <div className="flex gap-4">
               {socialLinks.map((link) => (
@@ -60,10 +89,10 @@ export default function Hero() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className={`hover:opacity-80 transition-opacity ${link.colorClass}`}
                   aria-label={link.name}
                 >
-                  <link.icon className="w-5 h-5" />
+                  <link.icon className="w-6 h-6" />
                 </a>
               ))}
             </div>
