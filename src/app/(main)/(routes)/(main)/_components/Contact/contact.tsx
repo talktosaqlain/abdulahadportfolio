@@ -10,8 +10,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "CONTACT NUMBER",
-    value: "+92 344 4891612",
-    link: "tel:+923444891612",
+    value: "+92 311 4891612",
+    link: "tel:+923114891612",
   },
   {
     icon: Mail,
