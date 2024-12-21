@@ -15,7 +15,7 @@ export default function Home() {
         <section id="home" className="min-h-screen ">
           <Hero />
         </section>
-        <section id="about" className="min-h-screen ">
+        <section id="about" className="min-h-screen" >
           <About />
         </section>
         <section id="services" className="min-h-screen ">
@@ -27,9 +27,9 @@ export default function Home() {
         <section id="projects" className="min-h-screen ">
           <Projects />
         </section>
-        <section id="certificate" className="min-h-screen ">
+        {/* <section id="certificate" className="min-h-screen ">
           <Certificate />
-        </section>
+        </section> */}
     
         <section id="publications" className="min-h-screen ">
           <Publications />
