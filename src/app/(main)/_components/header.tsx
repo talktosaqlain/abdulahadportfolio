@@ -8,8 +8,8 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },  { name: "Courses", href: "#certificate" },
-
+  { name: "Projects", href: "#projects" },
+  { name: "Courses", href: "#certificate" },
   { name: "Publications", href: "#publications" },
   { name: "Contact", href: "#contact" },
 ];
@@ -49,8 +49,8 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-50 bg-black backdrop-blur-sm py-2 px-10">
-      <div className="container mx-auto px-4">
+    <header className="sticky top-0 left-0 right-0 z-50 bg-black backdrop-blur-sm py-2 px-4 sm:px-4 md:px-10">
+      <div className="container mx-auto">
         <div className="flex h-16 items-center justify-between">
           <Link
             href="#home"
