@@ -24,10 +24,10 @@ export default function About() {
                 About Me
               </h2>
               <p className="text-secondaryText/80 text-base md:text-lg">
-                I am a Flutter developer with five years of experience building
-                beautiful, user-friendly mobile apps. I have experience with
-                Firebase, a Google-owned backend-as-a-service platform that
-                helps developers build and deploy mobile and web apps.
+              I am a skilled Flutter Developer with experience in building mobile apps using Dart, Firebase, and RESTful APIs. I have
+worked with Bloc and GetX for state management to create user-friendly and scalable apps. I am good at designing
+dashboards, adding localization, and connecting apps with backend services. I focus on delivering high-quality apps that
+meet client needs. I am always learning new technologies to improve my skills and build better apps.
               </p>
             </div>
 
